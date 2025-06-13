@@ -1,0 +1,52 @@
+.counter {
+  padding: 0.3rem;
+  background: #fdf0e9;
+  border-radius: 8px;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+
+.display {
+  font-size: 2.5rem;
+  color:  rgb(66, 0, 0);
+  text-align:left;
+  height:4px;
+  padding-bottom:0.6rem;
+}
+
+/* 
+.statsTable {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 2rem;
+  width: 100%;
+ 
+  max-width: 400px;
+  margin: auto;
+ 
+} */
+
+/* .statsRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.rowHeading {
+  margin-top: 0rem;
+  font-size: 1.2rem;
+  color:  rgb(66, 0, 0);;
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .statsTable {
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .rowHeading {
+    font-size: 1rem;
+  }
+}

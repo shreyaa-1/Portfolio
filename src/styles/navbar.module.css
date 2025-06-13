@@ -1,0 +1,169 @@
+/* 
+  최상위부터 하위로 내려가면서 작성하는 것이 중요
+*/
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #28293e;
+  --accent-color: #EF6D58;
+}
+
+body {
+  margin: 0; /* 테두리 space 제거 */
+  font-family: "Source Sans Pro";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+}
+
+.logo-img{
+ padding-left:50px;
+ padding-top:3px;
+}
+
+.navbar__logo i {
+  color: var(--accent-color);
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  position: relative; /* Needed for the pseudo-element to position absolutely */
+  padding: 8px 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.navbar__menu li {
+  position: relative; 
+}
+
+.navbar__menu li::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;           /* distance from text */
+  left: 50%;             /* start from center */
+  width: 70%;            /* underline length (less than 100%) */
+  height: 2px;           /* thickness */
+  background-color: var(--accent-color);
+  transform: translateX(-50%) scaleX(0); /* center and hidden initially */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar__menu li:hover::after {
+  transform: translateX(-50%) scaleX(1); /* show underline on hover */
+}
+
+
+
+.navbar__icons {
+  list-style: none;
+  color: var(--text-color);
+  display: flex;
+  padding-left: 0px;
+  
+}
+
+.navbar__icons li {
+  padding: 12px 12px;
+}
+
+.navbar__toggleBtn {
+ display: block;              /* Ensure it's visible */
+  position: fixed;            /* Fix relative to the viewport */
+  top: 10px;                  /* Adjust spacing from the top */
+  right: -60px;                 /* Adjust spacing from the left */
+  background: none;
+  border: none; 
+  cursor: pointer;
+  color: red;
+  font-size: 36px;
+  z-index: 1000; 
+  /* border:2px solid red; */
+ 
+}
+
+.contact-button{
+  padding:10px 20px;
+  color:white;
+  background-color: #28293e;
+  border: 1px solid grey;
+  width: 138px;
+  height:48px;
+
+}
+
+.contact-button:hover{
+  background-color: #EF6D58;
+  color: white;
+  border: 1px solid #EF6D58;
+    transform: scale(1.12); /* Slight pop-up effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Optional for depth */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px;
+  }
+  .logo-img{
+ padding-left:5px;
+ padding-top:10px;
+ height:50px;
+}
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+ 
+  }
+   .navbar__toggleBtn {
+    display: block;
+    font-size: 36px; /* big enough to see */
+    color: #EF6D58;
+  }
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__menu li::after {
+    width: 15%;  /* smaller underline for vertical menu */
+    bottom: 2px; /* maybe adjust spacing */
+  }
+}
