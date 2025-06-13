@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.e1ef7d19.css",
+    "main.js": "/Portfolio/static/js/main.e52f96aa.js",
+    "static/js/453.b74029da.chunk.js": "/Portfolio/static/js/453.b74029da.chunk.js",
+    "static/media/map.png": "/Portfolio/static/media/map.24478df31697dec59423.png",
+    "static/media/home-icon.png": "/Portfolio/static/media/home-icon.45a233d845a0e0ff0e09.png",
+    "static/media/about-icon.png": "/Portfolio/static/media/about-icon.c6ad3fe0ac9f433bb963.png",
+    "static/media/location.png": "/Portfolio/static/media/location.f91d61e404fa96b43a9d.png",
+    "static/media/achieve.png": "/Portfolio/static/media/achieve.c17a983bbe814ee6aa1d.png",
+    "static/media/email.png": "/Portfolio/static/media/email.ee7bc729646a5a6b0024.png",
+    "static/media/social.png": "/Portfolio/static/media/social.72f36e073d3eee962ef7.png",
+    "static/media/LOGO.png": "/Portfolio/static/media/LOGO.61248c94895aa730414f.png",
+    "static/media/college.png": "/Portfolio/static/media/college.1d846426c225db5e3e73.png",
+    "static/media/school.png": "/Portfolio/static/media/school.9e0b40fb1c9448f16185.png",
+    "static/media/slick.svg": "/Portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Portfolio/index.html",
+    "main.e1ef7d19.css.map": "/Portfolio/static/css/main.e1ef7d19.css.map",
+    "main.e52f96aa.js.map": "/Portfolio/static/js/main.e52f96aa.js.map",
+    "453.b74029da.chunk.js.map": "/Portfolio/static/js/453.b74029da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1ef7d19.css",
+    "static/js/main.e52f96aa.js"
+  ]
+}
