@@ -81,7 +81,22 @@ export default function Home() {
         </div>
 
         
+       <div className={`${styles.container} ${styles['right-container']}`}>
+          {/* <img src={nodejsimg} alt="Node JS"  */}
+           <div className={styles.yearcircler}>2025</div>
+          <div className={`${styles['text-box']} ${styles.nodejscard}`}>
 
+           <span className={styles.company}>MC Delivery Associate, Accenture</span>
+            <p>
+            Joined Accenture as a Song Service Associate, focusing on enhancing operations and customer satisfaction.
+            </p>
+            <span className={`${styles['right-container-arrow']} ${styles.nodejsarrow}`}></span>
+
+            
+        
+          </div>
+          
+        </div>
 
        
 
